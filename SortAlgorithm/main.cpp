@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     int a[] = {6, 5, 3, 1, 8, 7, 2, 4};
     int length = sizeof(a)/sizeof(int);
-    MergeSortRecursion(a, 0, length);
+    MergeSortRecursion(a, 0, length-1);
     for (int i = 0; i < length; ++i) {
         std::cout<<a[i]<<',';
     }

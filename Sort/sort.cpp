@@ -130,7 +130,26 @@ void MergeSortIteration(int A[], int len)    // 非递归(迭代)实现的归并
     }
 }
 
-
+// 快速排序
+int partition(int a[], int left, int right) {
+    int pivot = a[right];
+    int index = left - 1;
+    for (int i = left; i < right; ++i) {
+        if (a[i] < pivot) {
+            swap(a, i, ++index);
+        }
+    }
+    swap(a, index + 1, right);
+    return index;
+}
+void quickSort(int a[], int left, int right){
+    if (left <= right) {
+        return;
+    }
+    int index = partition(a, left, right);
+    quickSort(a, left, index -1);
+    quickSort(a, index + 1, right);
+}
 
 
 
