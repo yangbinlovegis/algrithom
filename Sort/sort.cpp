@@ -17,13 +17,6 @@ void swap(int a[], int i, int j) {
 }
 
 //冒泡排序
-// 分类 -------------- 内部比较排序
-// 数据结构 ---------- 数组
-// 最差时间复杂度 ---- O(n^2)
-// 最优时间复杂度 ---- 如果能在内部循环第一次运行时,使用一个旗标来表示有无需要交换的可能,可以把最优时间复杂度降低到O(n)
-// 平均时间复杂度 ---- O(n^2)
-// 所需辅助空间 ------ O(1)
-// 稳定性 ------------ 稳定
 void bubbleSort(int a[], int length) {
     for (int i = 0; i < length-1; ++i) {
         
@@ -34,7 +27,7 @@ void bubbleSort(int a[], int length) {
         }
     }
 }
-
+// 选择排序
 void selectionSort(int a[], int length) {
     for (int i = 0; i < length-1; ++i) {
         
@@ -51,13 +44,6 @@ void selectionSort(int a[], int length) {
 }
 
 // 插入排序
-// 分类 ------------- 内部比较排序
-// 数据结构 ---------- 数组
-// 最差时间复杂度 ---- 最坏情况为输入序列是降序排列的,此时时间复杂度O(n^2)
-// 最优时间复杂度 ---- 最好情况为输入序列是升序排列的,此时时间复杂度O(n)
-// 平均时间复杂度 ---- O(n^2)
-// 所需辅助空间 ------ O(1)
-// 稳定性 ------------ 稳定
 void intersectSort(int a[], int length) {
     for (int i = 0; i < length; ++i) {
         int iget = a[i]; // 任意取一个数字
@@ -69,15 +55,7 @@ void intersectSort(int a[], int length) {
         a[j+1] = iget;
     }
 }
-
 // 归并排序
-// 分类 -------------- 内部比较排序
-// 数据结构 ---------- 数组
-// 最差时间复杂度 ---- O(nlogn)
-// 最优时间复杂度 ---- O(nlogn)
-// 平均时间复杂度 ---- O(nlogn)
-// 所需辅助空间 ------ O(n)
-// 稳定性 ------------ 稳定
 void Merge(int A[], int left, int mid, int right)// 合并两个已排好序的数组A[left...mid]和A[mid+1...right]
 {
     int len = right - left + 1;
@@ -129,7 +107,6 @@ void MergeSortIteration(int A[], int len)    // 非递归(迭代)实现的归并
         }
     }
 }
-
 // 快速排序
 int partition(int a[], int left, int right) {
     int pivot = a[right];
