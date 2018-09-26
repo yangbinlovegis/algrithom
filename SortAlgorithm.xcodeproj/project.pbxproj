@@ -10,6 +10,7 @@
 		491E49C0209B142700C101A3 /* linkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 491E49BE209B142700C101A3 /* linkList.cpp */; };
 		4996E70E2094059200B7E7CF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4996E70D2094059200B7E7CF /* main.cpp */; };
 		4996E7172094083800B7E7CF /* sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4996E7152094083800B7E7CF /* sort.cpp */; };
+		6C27E964215205FA0026A730 /* Astar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C27E962215205FA0026A730 /* Astar.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,8 @@
 		4996E7152094083800B7E7CF /* sort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sort.cpp; sourceTree = "<group>"; };
 		4996E7162094083800B7E7CF /* sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sort.hpp; sourceTree = "<group>"; };
 		4996E7182094092100B7E7CF /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		6C27E962215205FA0026A730 /* Astar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Astar.cpp; sourceTree = "<group>"; };
+		6C27E963215205FA0026A730 /* Astar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Astar.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 		4996E7012094059200B7E7CF = {
 			isa = PBXGroup;
 			children = (
+				6C27E961215205CE0026A730 /* search */,
 				491E49C1209B146C00C101A3 /* linkList */,
 				4996E7142094080F00B7E7CF /* Sort */,
 				4996E70C2094059200B7E7CF /* SortAlgorithm */,
@@ -88,6 +92,15 @@
 				4996E7182094092100B7E7CF /* common.h */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		6C27E961215205CE0026A730 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				6C27E962215205FA0026A730 /* Astar.cpp */,
+				6C27E963215205FA0026A730 /* Astar.hpp */,
+			);
+			path = search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				491E49C0209B142700C101A3 /* linkList.cpp in Sources */,
+				6C27E964215205FA0026A730 /* Astar.cpp in Sources */,
 				4996E70E2094059200B7E7CF /* main.cpp in Sources */,
 				4996E7172094083800B7E7CF /* sort.cpp in Sources */,
 			);
